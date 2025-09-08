@@ -9,7 +9,7 @@ test('renders My Portfolio heading', () => {
 
 test('renders Welcome message', () => {
   render(<App />);
-  const welcome = screen.getByText(/welcome to my site/i); // using regex with /i for case-insensitive match
+  const welcome = screen.getByText(/welcome to my site/i);
   expect(welcome).toBeInTheDocument();
 });
 
